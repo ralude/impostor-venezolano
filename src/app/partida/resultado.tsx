@@ -55,7 +55,7 @@ export default function Resultado() {
           variant="outlined"
           onPress={() => {
             terminarPartida();
-            router.replace('/partida');
+            router.dismissTo('/partida');
           }}
         />
       </View>
