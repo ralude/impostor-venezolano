@@ -30,7 +30,7 @@ export default function Juego() {
 
         <ScrollView
           className="mt-4 flex-1"
-          contentContainerClassName="flex-row flex-wrap justify-center gap-3 py-4"
+          contentContainerClassName="flex-row flex-wrap justify-between gap-y-4 py-4"
           showsVerticalScrollIndicator={false}>
           {jugadores.map((jugador) => (
             <TarjetaJugador

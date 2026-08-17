@@ -14,7 +14,7 @@ export function TarjetaJugador({ nombre, revelada, onPress }: TarjetaJugadorProp
       accessibilityRole="button"
       accessibilityLabel={`${nombre}${revelada ? ', palabra vista' : ', revelar palabra'}`}
       accessibilityState={{ disabled: revelada }}
-      className={`min-h-20 max-w-56 basis-36 grow items-center justify-center rounded-2xl px-3 py-5 ${
+      className={`min-h-24 basis-[48%] items-center justify-center rounded-2xl px-3 py-5 md:basis-[31%] ${
         revelada ? 'opacity-40' : 'bg-surface-container active:opacity-80'
       }`}>
       <Text
