@@ -1,4 +1,4 @@
-# Impostor Veneco
+# Impostor Venezolano
 
 Juego local de deducción y palabras venezolanas construido con Expo SDK 57, Expo Router y NativeWind.
 
