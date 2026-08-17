@@ -15,7 +15,7 @@ export const CATEGORIAS = [
   'Expresiones',
   'Lugares',
   'Naturaleza',
-  'Musica y Tradicion',
+  'Música y Tradición',
   'Objetos y Vestimenta',
 ] as const;
 
@@ -37,12 +37,12 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Se envuelve en hoja de platano', 'Prota de las navidades', 'Lleva guiso, aceitunas y alcaparras'],
   },
   {
-    palabra: 'Pabellon Criollo',
+    palabra: 'Pabellón Criollo',
     categoria: 'Comida y Bebida',
     pistas: ['Plato nacional por excelencia', 'Lleva caraotas negras', 'Arroz, carne mechada y tajadas'],
   },
   {
-    palabra: 'Tequeno',
+    palabra: 'Tequeño',
     categoria: 'Comida y Bebida',
     pistas: ['Deditos de queso envueltos', 'Estrella de toda fiesta', 'Fritos y crujientes por fuera'],
   },
@@ -62,7 +62,7 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Jugo de cana de azucar', 'Verde y refrescante', 'Lo exprimen en un molino'],
   },
   {
-    palabra: 'Papelon',
+    palabra: 'Papelón',
     categoria: 'Comida y Bebida',
     pistas: ['Panela de cana solidificada', 'Se diluye para hacer jugo', 'Con limon es una bebida clasica'],
   },
@@ -97,9 +97,9 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Platano verde aplastado y frito', 'Se aplana dos veces', 'Acompanante crujiente por excelencia'],
   },
   {
-    palabra: 'Chupe',
+    palabra: 'Reina Pepiada',
     categoria: 'Comida y Bebida',
-    pistas: ['Sopa cremosa y abundante', 'De gallina o de pescado', 'Tiene papas, queso y huevo'],
+    pistas: ['Relleno cremoso para arepa', 'Lleva pollo y aguacate', 'Un clásico de las areperas'],
   },
   {
     palabra: 'Mondongo',
@@ -112,24 +112,24 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Empanada pequena y ovalada', 'Frita en la calle por las mananas', 'De queso, carne o caraotas'],
   },
   {
-    palabra: 'Bienmesabe',
+    palabra: 'Guasacaca',
     categoria: 'Comida y Bebida',
-    pistas: ['Postre cremoso de coco', 'Su nombre ya dice que sabe bien', 'Tipico de la region central'],
+    pistas: ['Salsa verde y fresca', 'Acompaña parrillas y empanadas', 'Lleva aguacate o cilantro'],
   },
   {
-    palabra: 'Conserva de Coco',
+    palabra: 'Golfeado',
     categoria: 'Comida y Bebida',
-    pistas: ['Dulce rallado y cocido con papelon', 'Se vende en las playas', 'Dulzor intenso y tropical'],
+    pistas: ['Pan dulce enrollado', 'Lleva papelón y queso', 'Se disfruta con café'],
   },
   {
-    palabra: 'Chicharron',
+    palabra: 'Cotufa',
     categoria: 'Comida y Bebida',
-    pistas: ['Piel de cerdo frita y crujiente', 'Se vende en bolsitas en la calle', 'Crujido que se oye a lo lejos'],
+    pistas: ['Maíz reventado y crujiente', 'Se come en el cine', 'Puede ser dulce o salada'],
   },
   {
-    palabra: 'Butifarra',
+    palabra: 'Pan de Jamón',
     categoria: 'Comida y Bebida',
-    pistas: ['Embutido de carne de res o cerdo', 'Tipico de Barlovento', 'Se guisa o se asa a la parrilla'],
+    pistas: ['Pan enrollado con jamón y aceitunas', 'Protagonista de la mesa navideña', 'Se comparte en diciembre'],
   },
   {
     palabra: 'Asado Negro',
@@ -159,7 +159,7 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Tu mejor amigo o amiga', 'Vale mas que un conocido', 'Con el cuentas para todo'],
   },
   {
-    palabra: 'Chevere',
+    palabra: 'Chévere',
     categoria: 'Expresiones',
     pistas: ['Algo que esta muy bien', 'Palabra de aprobacion total', 'Lo contrario de "malo"'],
   },
@@ -189,7 +189,7 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Burla intensa y continua', 'Entre amigos es normal', 'Se disfruta en grupo'],
   },
   {
-    palabra: 'Bululu',
+    palabra: 'Bochinche',
     categoria: 'Expresiones',
     pistas: ['Multitud o mucha gente junta', 'Caos de personas', 'Cuando el concierto esta full'],
   },
@@ -199,7 +199,7 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Molesto, enojado o sorprendente', 'Palabra de doble sentido', 'La usan en toda Venezuela'],
   },
   {
-    palabra: 'Fino',
+    palabra: 'Vacilar',
     categoria: 'Expresiones',
     pistas: ['Excelente, de gran calidad', 'Lo contrario de ordinario', 'Tambien describe a alguien elegante'],
   },
@@ -214,7 +214,7 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Persona de cabello rubio o claro', 'Apodo comun en Venezuela', 'Sin ofensa, es carinoso'],
   },
   {
-    palabra: 'Musiu',
+    palabra: 'Musiú',
     categoria: 'Expresiones',
     pistas: ['Persona extranjera o blanca', 'De "monsieur" deformado', 'Los abuelos lo decian mucho'],
   },
@@ -249,14 +249,14 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Grupo cerrado de personas influyentes', 'Circulo exclusivo de poder', 'Quien tiene las conexiones'],
   },
   {
-    palabra: 'Buscon',
+    palabra: 'Gafo',
     categoria: 'Expresiones',
-    pistas: ['Persona que busca aprovecharse', 'Oportunista por naturaleza', 'Siempre esta al acecho'],
+    pistas: ['Persona despistada o ingenua', 'Se usa como insulto leve', 'También puede ser cariñoso entre amigos'],
   },
   {
-    palabra: 'Pillo',
+    palabra: 'Sifrino',
     categoria: 'Expresiones',
-    pistas: ['Astuto o tramposo', 'Se sale con la suya', 'Puede ser jugueton o delincuente'],
+    pistas: ['Persona de gustos costosos', 'Cuida mucho su apariencia', 'Palabra de clase social y estilo'],
   },
   {
     palabra: 'Vivo',
@@ -264,14 +264,14 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Listo e inteligente', 'No se deja enganar', 'Ve las cosas antes que otros'],
   },
   {
-    palabra: 'Chivo',
+    palabra: 'Sapo',
     categoria: 'Expresiones',
-    pistas: ['Persona que delata a otros', 'Soplón en el barrio', 'Nadie le confia secretos'],
+    pistas: ['Persona que delata a otros', 'Soplón en el barrio', 'Nadie le confía secretos'],
   },
   {
-    palabra: 'Guaro',
+    palabra: 'Naguará',
     categoria: 'Expresiones',
-    pistas: ['Persona del estado Lara', 'Gentilicio regional orgulloso', 'Tierra de musica y folklore'],
+    pistas: ['Expresión de sorpresa', 'Muy usada en Lara', 'Equivale a “qué impresionante”'],
   },
 
   // ── Lugares (15) ──
@@ -281,14 +281,14 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Montana de cima plana', 'Millones de anos de antiguedad', 'El mas famoso es el Roraima'],
   },
   {
-    palabra: 'Sabana',
+    palabra: 'Gran Sabana',
     categoria: 'Lugares',
-    pistas: ['Llanura extensa con pocos arboles', 'Pastizal abierto bajo el sol', 'Dominante en Los Llanos'],
+    pistas: ['Paisaje de tepuyes', 'Está en el estado Bolívar', 'Canaima forma parte de esta región'],
   },
   {
     palabra: 'Morichal',
     categoria: 'Lugares',
-    pistas: ['Cano o arroyo rodeado de moriches', 'Vegetacion densa y humeda', 'Refugio de fauna en Los Llanos'],
+    pistas: ['Caño o arroyo rodeado de moriches', 'Vegetación densa y húmeda', 'Refugio de fauna en los Llanos'],
   },
   {
     palabra: 'Llanos',
@@ -296,24 +296,24 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Extension plana interminable', 'Tierra de ganado y vaqueros', 'El horizonte se pierde de vista'],
   },
   {
-    palabra: 'Medanos',
+    palabra: 'Médanos de Coro',
     categoria: 'Lugares',
-    pistas: ['Dunas de arena en la costa', 'Arena movida por el viento', 'Paisaje desertico frente al mar'],
+    pistas: ['Dunas de arena en Venezuela', 'Están en el estado Falcón', 'El viento cambia su forma'],
   },
   {
-    palabra: 'Cano',
+    palabra: 'Caño',
     categoria: 'Lugares',
     pistas: ['Brazo de rio o canal natural', 'Agua dulce entre la vegetacion', 'Se navega en curiara'],
   },
   {
-    palabra: 'Paramo',
+    palabra: 'Páramo',
     categoria: 'Lugares',
     pistas: ['Zona fria de alta montana', 'Vegetacion rala y frailejones', 'Niebla y frio constante'],
   },
   {
-    palabra: 'Salto',
+    palabra: 'Salto Ángel',
     categoria: 'Lugares',
-    pistas: ['Cascada o caida de agua', 'El mas alto del mundo esta aqui', 'Agua cayendo desde la altura'],
+    pistas: ['La caída de agua más alta del mundo', 'Está en el estado Bolívar', 'También se conoce como Kerepakupai Vená'],
   },
   {
     palabra: 'Selva',
@@ -321,14 +321,14 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Bosque tropical denso', 'Amazonia venezolana', 'Arboles gigantes y rios caudalosos'],
   },
   {
-    palabra: 'Cerro',
+    palabra: 'El Ávila',
     categoria: 'Lugares',
-    pistas: ['Elevacion menor que una montana', 'Colina rocosa o con vegetacion', 'Se sube a pie o en bicicleta'],
+    pistas: ['Montaña que acompaña a Caracas', 'También se llama Waraira Repano', 'Se ve desde gran parte de la capital'],
   },
   {
-    palabra: 'Playa',
+    palabra: 'Los Roques',
     categoria: 'Lugares',
-    pistas: ['Arena y mar en la costa', 'Destino favorito del fin de semana', 'Sol, sal y brisa marina'],
+    pistas: ['Archipiélago de aguas turquesas', 'Está en el mar Caribe', 'Destino de playas y cayos'],
   },
   {
     palabra: 'Cueva',
@@ -341,12 +341,12 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Terreno bajo entre montanas', 'Zona fertil y habitada', 'Rodeado de cerros verdes'],
   },
   {
-    palabra: 'Cordillera',
+    palabra: 'Pico Bolívar',
     categoria: 'Lugares',
-    pistas: ['Cadena de montanas', 'Los Andes venezolanos', 'Nieve perpetua en los picos altos'],
+    pistas: ['Cumbre más alta de Venezuela', 'Está en la Sierra Nevada', 'Puede recibir nieve en temporada fría'],
   },
   {
-    palabra: 'Delta',
+    palabra: 'Delta del Orinoco',
     categoria: 'Lugares',
     pistas: ['Desembocadura del Orinoco', 'Laberinto de canos e islas', 'Tierra de los Warao'],
   },
@@ -358,9 +358,9 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Palmera de los morichales', 'De ella sale el moriche', 'Abundante en Los Llanos'],
   },
   {
-    palabra: 'Ceiba',
+    palabra: 'Turpial',
     categoria: 'Naturaleza',
-    pistas: ['Árbol gigante y sagrado', 'Crece en regiones tropicales', 'Su tronco es grueso y majestuoso'],
+    pistas: ['Ave nacional de Venezuela', 'Tiene plumaje amarillo y negro', 'Su canto es muy reconocido'],
   },
   {
     palabra: 'Araguaney',
@@ -368,24 +368,24 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Arbol nacional de flores amarillas', 'Florece entre febrero y abril', 'Amarillo intenso que anuncia la lluvia'],
   },
   {
-    palabra: 'Saman',
+    palabra: 'Samán',
     categoria: 'Naturaleza',
     pistas: ['Arbol de sombra amplia y fresca', 'Sus ramas se extienden como paraguas', 'Refugio perfecto del sol tropical'],
   },
   {
-    palabra: 'Cardon',
+    palabra: 'Cardón',
     categoria: 'Naturaleza',
     pistas: ['Cactus gigante del desierto', 'Resiste climas aridos', 'Formas caprichosas en la peninsula'],
   },
   {
-    palabra: 'Cuji',
+    palabra: 'Cují',
     categoria: 'Naturaleza',
     pistas: ['Arbol espinudo del llano', 'Resiste la sequia extrema', 'Sus ramas dan sombra escasa'],
   },
   {
-    palabra: 'Jobo',
+    palabra: 'Frailejón',
     categoria: 'Naturaleza',
-    pistas: ['Fruto pequeno amarillo o rojo', 'Arbol de sombra en el llano', 'Se come crudo o en dulce'],
+    pistas: ['Planta característica de los páramos', 'Sus hojas parecen aterciopeladas', 'Ayuda a conservar el agua'],
   },
   {
     palabra: 'Cambur',
@@ -403,14 +403,14 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Fruta acida y aromatica', 'Amarilla o morada por fuera', 'Jugo refrescante de verano'],
   },
   {
-    palabra: 'Coco',
+    palabra: 'Chigüire',
     categoria: 'Naturaleza',
-    pistas: ['Fruta de palmera tropical', 'Agua refrescante por dentro', 'Pulpa blanca y fibrosa'],
+    pistas: ['El roedor más grande del mundo', 'Vive cerca del agua', 'Es común en los Llanos'],
   },
   {
-    palabra: 'Cafe',
+    palabra: 'Guacamaya',
     categoria: 'Naturaleza',
-    pistas: ['Semilla aromatica de la montana', 'Bebida oscura y energizante', 'El guayoyo es su forma suave'],
+    pistas: ['Ave de colores intensos', 'Se ve en ciudades y bosques', 'Tiene pico curvo'],
   },
   {
     palabra: 'Cacao',
@@ -418,9 +418,9 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Semilla de la que nace el chocolate', 'Venezuela produce el mejor del mundo', 'Fruto ovalado de arbol tropical'],
   },
   {
-    palabra: 'Yuca',
+    palabra: 'Oso Frontino',
     categoria: 'Naturaleza',
-    pistas: ['Raiz alargada y feculenta', 'Se hierve o se hace casabe', 'Alimento base indigena'],
+    pistas: ['Único oso de Sudamérica', 'Tiene marcas claras alrededor de los ojos', 'Habita en los Andes'],
   },
   {
     palabra: 'Merey',
@@ -428,55 +428,55 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Fruto tropical con semilla afuera', 'La semilla se tuesta y se come', 'Crece en arboles grandes'],
   },
 
-  // ── Musica y Tradicion (10) ──
+  // ── Música y Tradición (10) ──
   {
     palabra: 'Joropo',
-    categoria: 'Musica y Tradicion',
+    categoria: 'Música y Tradición',
     pistas: ['Musica y baile nacional', 'Ritmo rapido con cuatro y arpa', 'Se baila zapateado'],
   },
   {
-    palabra: 'Tambor',
-    categoria: 'Musica y Tradicion',
-    pistas: ['Instrumento de percusion ancestral', 'Fiesta de San Juan y Barlovento', 'Ritmo que se siente en el pecho'],
+    palabra: 'Tambores de San Juan',
+    categoria: 'Música y Tradición',
+    pistas: ['Celebración con música y baile', 'Se realiza en junio', 'Es una tradición afrovenezolana viva'],
   },
   {
     palabra: 'Cuatro',
-    categoria: 'Musica y Tradicion',
+    categoria: 'Música y Tradición',
     pistas: ['Guitarra pequena de cuatro cuerdas', 'Instrumento nacional por excelencia', 'Acompana el joropo y la tonada'],
   },
   {
     palabra: 'Maracas',
-    categoria: 'Musica y Tradicion',
+    categoria: 'Música y Tradición',
     pistas: ['Sonajas hechas de tapara', 'Se agitan al ritmo de la musica', 'Dan el sonido caracteristico del joropo'],
   },
   {
-    palabra: 'Arpa',
-    categoria: 'Musica y Tradicion',
-    pistas: ['Instrumento de cuerdas grande y triangular', 'Esencial en la musica llanera', 'Se toca sentado con las manos'],
+    palabra: 'Calipso de El Callao',
+    categoria: 'Música y Tradición',
+    pistas: ['Música y baile del estado Bolívar', 'Suena especialmente en Carnaval', 'Tiene raíces afrocaribeñas'],
   },
   {
-    palabra: 'Fulia',
-    categoria: 'Musica y Tradicion',
-    pistas: ['Canto tradicional de Barlovento', 'Con tambores y voces', 'Ritmo afrovenezolano antiguo'],
+    palabra: 'Alma Llanera',
+    categoria: 'Música y Tradición',
+    pistas: ['Canción emblemática venezolana', 'Habla de los paisajes del llano', 'Se interpreta con orgullo nacional'],
   },
   {
     palabra: 'Gaita',
-    categoria: 'Musica y Tradicion',
-    pistas: ['Musica navidena zuliana', 'Tambora, furro y charrasca', 'Diciembre no es igual sin ella'],
+    categoria: 'Música y Tradición',
+    pistas: ['Música navideña zuliana', 'Tambora, furro y charrasca', 'Diciembre no es igual sin ella'],
   },
   {
     palabra: 'Tonada',
-    categoria: 'Musica y Tradicion',
+    categoria: 'Música y Tradición',
     pistas: ['Canto llanero melancolico', 'Solo voz y cuatro', 'Canta el vaquero a la orilla del rio'],
   },
   {
     palabra: 'Parranda',
-    categoria: 'Musica y Tradicion',
+    categoria: 'Música y Tradición',
     pistas: ['Fiesta con musica y baile', 'Celebracion espontanea y ruidosa', 'Aguinaldos y villancicos'],
   },
   {
     palabra: 'Aguinaldo',
-    categoria: 'Musica y Tradicion',
+    categoria: 'Música y Tradición',
     pistas: ['Villancico venezolano', 'Se canta en diciembre', 'Con cuatro, maracas y voces alegres'],
   },
 
@@ -487,7 +487,7 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Hamaca tejida a mano', 'Se cuelga para dormir o descansar', 'Hecho con fibra natural o nylon'],
   },
   {
-    palabra: 'Liqui Liqui',
+    palabra: 'Liquiliqui',
     categoria: 'Objetos y Vestimenta',
     pistas: ['Traje tipico masculino', 'Blanco con botones de tejido', 'Se usa en fiestas tradicionales'],
   },
@@ -497,9 +497,9 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Calzado rustico de suela de goma', 'Los usan los campesinos', 'Comodas y frescas para el campo'],
   },
   {
-    palabra: 'Cotiza',
+    palabra: 'Cholas',
     categoria: 'Objetos y Vestimenta',
-    pistas: ['Zapato deportivo informal', 'Calzado urbano de uso diario', 'Los jovenes las usan mucho'],
+    pistas: ['Calzado abierto y cómodo', 'Se usa en casa o en la playa', 'Tiene una tira sobre el pie'],
   },
   {
     palabra: 'Totuma',
@@ -509,7 +509,7 @@ const PALABRAS_BASE: PalabraBase[] = [
   {
     palabra: 'Curiara',
     categoria: 'Objetos y Vestimenta',
-    pistas: ['Canoa hecha de un solo tronco', 'Navegacion tradicional indigena', 'Se usa en rios y canos'],
+    pistas: ['Canoa hecha de un solo tronco', 'Navegación tradicional indígena', 'Se usa en ríos y caños'],
   },
   {
     palabra: 'Sombrero de Cogollo',
@@ -517,19 +517,19 @@ const PALABRAS_BASE: PalabraBase[] = [
     pistas: ['Sombrero tejido a mano', 'Tipico del llano venezolano', 'Protege del sol intenso'],
   },
   {
-    palabra: 'Ruana',
+    palabra: 'Pocillo',
     categoria: 'Objetos y Vestimenta',
-    pistas: ['Poncho de lana o tela', 'Abriga en el paramo', 'Se usa en los Andes'],
+    pistas: ['Taza pequeña para bebidas calientes', 'Se usa mucho para tomar café', 'Puede ser de cerámica'],
   },
   {
-    palabra: 'Estera',
+    palabra: 'Budare',
     categoria: 'Objetos y Vestimenta',
-    pistas: ['Tejido plano de fibra natural', 'Se usa como alfombra o asiento', 'Artesania indigena y campesina'],
+    pistas: ['Plancha para cocinar sobre el fuego', 'Se usa para arepas y cachapas', 'Puede ser de barro o metal'],
   },
   {
-    palabra: 'Petate',
+    palabra: 'Cava',
     categoria: 'Objetos y Vestimenta',
-    pistas: ['Estera tejida para dormir', 'Se enrolla para transportar', 'Hecho de palma o fibra vegetal'],
+    pistas: ['Recipiente aislante para conservar bebidas', 'Se llena con hielo', 'Acompaña paseos y reuniones'],
   },
 ];
 
