@@ -25,7 +25,7 @@ export function PlayerInput({ value, onChangeText, onSubmit }: PlayerInputProps)
         onPress={onSubmit}
         accessibilityRole="button"
         accessibilityLabel="Agregar jugador"
-        className="h-12 w-12 items-center justify-center rounded-xl bg-primary active:opacity-80">
+        className="h-14 w-14 items-center justify-center rounded-2xl bg-primary active:opacity-80">
         <Text className="text-2xl font-bold text-on-primary">+</Text>
       </Pressable>
     </View>

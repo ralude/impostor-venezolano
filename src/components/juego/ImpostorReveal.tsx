@@ -7,8 +7,8 @@ interface ImpostorRevealProps {
 
 export function ImpostorReveal({ palabraClave, categoria }: ImpostorRevealProps) {
   return (
-    <View className="mt-6 items-center rounded-3xl bg-surface-container px-8 py-10">
-      <Text className="text-center text-2xl font-bold text-error">ERES EL IMPOSTOR</Text>
+    <View className="items-center rounded-3xl bg-error-container px-8 py-12">
+      <Text className="text-center text-sm font-bold uppercase tracking-widest text-on-error-container">Eres el impostor</Text>
       <Text className="mt-6 text-center text-sm font-medium uppercase tracking-widest text-on-error-container/80">
         Tu palabra clave es
       </Text>
@@ -19,7 +19,7 @@ export function ImpostorReveal({ palabraClave, categoria }: ImpostorRevealProps)
         Improvisa sin revelar que no conoces la palabra secreta.
       </Text>
       <Text className="mt-4 text-center text-sm text-on-error-container/80">
-        Categoría: {categoria}
+        {categoria}
       </Text>
     </View>
   );

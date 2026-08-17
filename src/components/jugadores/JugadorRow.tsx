@@ -26,7 +26,7 @@ export function JugadorRow({
   canEliminar,
 }: JugadorRowProps) {
   return (
-    <View key={id} className="mb-3 flex-row items-center rounded-xl bg-surface-container px-4 py-3">
+    <View key={id} className="mb-3 min-h-16 flex-row items-center rounded-2xl bg-surface-container px-4 py-2">
       {editando ? (
         <>
           <TextInput

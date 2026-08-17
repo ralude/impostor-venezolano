@@ -7,7 +7,7 @@ interface NormalRevealProps {
 
 export function NormalReveal({ palabra, categoria }: NormalRevealProps) {
   return (
-    <View className="mt-6 items-center rounded-3xl bg-surface-container px-8 py-10">
+    <View className="items-center rounded-3xl bg-surface-container-high px-8 py-12">
       <Text className="text-center text-sm font-medium uppercase tracking-widest text-on-surface-variant">
         Tu palabra es
       </Text>
@@ -16,8 +16,9 @@ export function NormalReveal({ palabra, categoria }: NormalRevealProps) {
       </Text>
 
       <Text className="mt-4 text-center text-sm text-on-surface-variant">
-        Categoría: {categoria}
+        {categoria}
       </Text>
+      <Text className="mt-8 text-center text-sm leading-5 text-on-surface-variant">Memorízala. Luego oculta la pantalla y pásala.</Text>
     </View>
   );
 }

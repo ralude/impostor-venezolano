@@ -56,8 +56,9 @@ export default function Settings() {
         showsVerticalScrollIndicator={false}>
         <ScreenHeader title="Configuración" />
 
-        <View className="mt-8">
-          <Text className="text-lg font-semibold text-on-surface">Generación con IA</Text>
+        <View className="mt-8 rounded-3xl bg-surface-container-high p-6">
+          <Text className="text-xs font-semibold uppercase tracking-widest text-primary">Opcional</Text>
+          <Text className="mt-3 text-xl font-bold text-on-surface">Generación con IA</Text>
           <Text className="mt-2 text-sm text-on-surface-variant">
             Gemini genera palabras clave y complementa la búsqueda de sinónimos. Necesitas una API
             key de Google AI Studio.
@@ -92,7 +93,7 @@ export default function Settings() {
             )}
           </View>
 
-          <View className="mt-4 rounded-xl bg-surface-container p-4">
+          <View className="mt-4 rounded-2xl bg-surface-container p-4">
             <Text className="text-xs text-on-surface-variant">
               Cómo obtener tu API key:{'\n'}
               1. Ve a aistudio.google.com{'\n'}
@@ -107,12 +108,11 @@ export default function Settings() {
               title={guardando ? 'Guardando…' : guardado ? 'Guardado' : 'Guardar API key'}
               onPress={handleGuardar}
               disabled={guardado || cargando || guardando}
-              className={guardado || cargando || guardando ? 'opacity-60' : ''}
             />
           </View>
         </View>
 
-        <View className="mt-10">
+        <View className="mt-8 rounded-2xl border border-outline p-5">
           <Text className="text-lg font-semibold text-on-surface">
             Cómo funciona la palabra clave
           </Text>

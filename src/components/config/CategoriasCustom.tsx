@@ -166,9 +166,9 @@ export function CategoriasCustom({
         )));
 
   return (
-    <View className="mt-10">
+    <View className="mt-8">
       <View className="flex-row items-center justify-between">
-        <Text className="text-lg font-semibold text-on-surface">Categorías personalizadas</Text>
+        <Text className="text-lg font-semibold text-on-surface">Tus categorías</Text>
         <Pressable
           onPress={abrirModalNueva}
           disabled={!!errorPersistencia}
@@ -189,9 +189,10 @@ export function CategoriasCustom({
       )}
 
       {!errorPersistencia && categorias.length === 0 ? (
-        <Text className="mt-4 text-sm text-on-surface-variant">
-          No tienes categorías personalizadas aún. Toca {'“+ Nueva”'} para crear una.
-        </Text>
+        <View className="mt-5 items-center rounded-2xl border border-outline p-6">
+          <Text className="text-base font-semibold text-on-surface">Todavía no hay categorías propias</Text>
+          <Text className="mt-2 text-center text-sm text-on-surface-variant">Crea una para jugar con lugares, personas o chistes de tu grupo.</Text>
+        </View>
       ) : !errorPersistencia ? (
         categorias.map((cat) => (
           <CategoriaAccordion
@@ -229,10 +230,10 @@ export function CategoriasCustom({
         onRequestClose={cerrarModal}>
         <KeyboardAvoidingView
           behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-          className="flex-1 justify-end bg-black/60 md:justify-center md:px-6">
+          className="flex-1 justify-end bg-scrim/60 md:justify-center md:px-6">
           <View
             accessibilityViewIsModal
-            className="max-h-[90%] w-full max-w-2xl self-center rounded-t-3xl bg-background px-6 pb-8 pt-6 md:rounded-3xl">
+            className="max-h-[90%] w-full max-w-2xl self-center rounded-t-3xl bg-surface-container-high px-6 pb-8 pt-6 md:rounded-3xl">
             <ScrollView showsVerticalScrollIndicator={false}>
               <Text className="text-2xl font-bold text-on-surface">
                  {palabraIndexActual !== null
@@ -320,7 +321,6 @@ export function CategoriasCustom({
                    }
                   onPress={handleGuardar}
                   disabled={!puedeGuardar}
-                  className={!puedeGuardar ? 'opacity-40' : ''}
                 />
                 <Button
                   title="Cancelar"

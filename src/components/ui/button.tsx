@@ -17,7 +17,7 @@ export interface ButtonProps extends Omit<PressableProps, 'children'> {
  * - iOS/Web: estado `active:` de NativeWind (escala + opacidad al instante).
  */
 const BASE_CLASSES =
-  'min-h-14 w-full flex-row items-center justify-center rounded-full px-8 py-3 active:scale-[0.98] active:opacity-90';
+  'min-h-14 w-full flex-row items-center justify-center rounded-full px-8 py-3 active:scale-[0.98] active:opacity-90 focus:ring-2 focus:ring-primary';
 
 const LABEL_CLASSES = 'text-base font-semibold tracking-wide';
 

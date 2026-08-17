@@ -24,7 +24,7 @@ export function CategoriaAccordion({
   onEliminarPalabra,
 }: CategoriaAccordionProps) {
   return (
-    <View className="mt-3 overflow-hidden rounded-xl bg-surface-container">
+    <View className="mt-3 overflow-hidden rounded-2xl bg-surface-container">
       <Pressable
         onPress={onToggle}
         accessibilityRole="button"

@@ -1,11 +1,11 @@
 import { Redirect, useLocalSearchParams, useRouter } from 'expo-router';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import { ImpostorReveal } from '@/components/juego/ImpostorReveal';
 import { NormalReveal } from '@/components/juego/NormalReveal';
 import { PreRevealScreen } from '@/components/juego/PreRevealScreen';
-import { ScreenHeader } from '@/components/ui/screen-header';
 import { Button } from '@/components/ui/button';
+import { GameProgress } from '@/components/ui/game-progress';
 import { usePartidaContext } from '@/context/PartidaContext';
 import { useRevelar } from '@/hooks/useRevelar';
 import { ScreenLayout } from '@/components/ui/screen-layout';
@@ -32,24 +32,27 @@ export default function Revelar() {
   }
 
   if (!revelado) {
-    return <PreRevealScreen nombre={jugador.nombre} onReveal={handleRevelar} />;
+    return (
+      <PreRevealScreen
+        nombre={jugador.nombre}
+        current={Math.min(jugadores.filter((item) => item.palabraRevelada).length + 1, jugadores.length)}
+        total={jugadores.length}
+        onReveal={handleRevelar}
+      />
+    );
   }
 
   const mostrada = palabraMostrada ?? palabra.palabra;
+  const current = jugadores.filter((item) => item.palabraRevelada).length;
 
   return (
     <ScreenLayout>
-      <View className="px-6 pt-4">
-        <ScreenHeader title="Revelar" />
+      <View className="w-full max-w-xl self-center px-6 pt-6">
+        <GameProgress current={current} total={jugadores.length} label="Tu rol" />
       </View>
-      <ScrollView className="flex-1 px-6" contentContainerClassName="flex-1 justify-center">
-        <Text
-          className={`text-center text-lg ${
-            esImpostor ? 'text-error' : 'text-on-surface-variant'
-          }`}>
-          {jugador.nombre}
-        </Text>
-
+      <ScrollView
+        className="w-full max-w-xl flex-1 self-center px-6"
+        contentContainerClassName="flex-1 justify-center py-8">
         {esImpostor ? (
           <ImpostorReveal
             palabraClave={palabra.palabraClaveImpostor}
@@ -63,11 +66,11 @@ export default function Revelar() {
         )}
       </ScrollView>
 
-      <View className="px-6 pb-6">
+      <View className="w-full max-w-xl self-center px-6 pb-6">
         <Button
-          title="Continuar"
+          title="Ocultar y pasar"
           onPress={() => router.replace('/partida/juego')}
-          className={esImpostor ? 'bg-error text-on-error' : ''}
+          variant={esImpostor ? 'tonal' : 'filled'}
         />
       </View>
     </ScreenLayout>

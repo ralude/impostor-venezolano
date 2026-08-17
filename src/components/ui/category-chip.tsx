@@ -13,10 +13,10 @@ export function CategoryChip({ label, activa, onPress }: CategoryChipProps) {
       accessibilityRole="checkbox"
       accessibilityLabel={label}
       accessibilityState={{ checked: activa }}
-      className={`min-h-12 justify-center rounded-full px-4 py-2 ${
+      className={`min-h-12 justify-center rounded-full border px-4 py-2 ${
         activa
-          ? 'bg-primary-container active:opacity-80'
-          : 'bg-surface-container opacity-50 active:opacity-70'
+          ? 'border-primary-container bg-primary-container active:opacity-80'
+          : 'border-outline bg-surface-container active:bg-surface-container-high'
       }`}>
       <Text
         className={`text-sm font-medium ${
