@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Redirect, useLocalSearchParams, useRouter } from 'expo-router';
 import { ScrollView, View } from 'react-native';
 
@@ -14,6 +15,7 @@ import { LoadingScreen } from '@/components/ui/loading-screen';
 export default function Revelar() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
+  const [revealComplete, setRevealComplete] = useState(false);
   const { jugadores, palabraActual, palabraMostrada, revelarPalabra, isHydrated, fase } =
     usePartidaContext();
 
@@ -57,20 +59,23 @@ export default function Revelar() {
           <ImpostorReveal
             palabraClave={palabra.palabraClaveImpostor}
             categoria={palabra.categoria}
+            onComplete={() => setRevealComplete(true)}
           />
         ) : (
           <NormalReveal
             palabra={mostrada}
             categoria={palabra.categoria}
+            onComplete={() => setRevealComplete(true)}
           />
         )}
       </ScrollView>
 
       <View className="w-full max-w-xl self-center px-6 pb-6">
         <Button
-          title="Ocultar y pasar"
+          title={revealComplete ? 'Ocultar y pasar' : 'Revelando…'}
           onPress={() => router.replace('/partida/juego')}
           variant={esImpostor ? 'tonal' : 'filled'}
+          disabled={!revealComplete}
         />
       </View>
     </ScreenLayout>
